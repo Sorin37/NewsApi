@@ -7,6 +7,8 @@
         public string Category { get; set; }
         public string Author { get; set; }
         public string ImageUrl { get; set; }
+        public string Description { get; set; }
+        public string CategoryId { get; set; }
 
         public Announcement EntityToModel()
         {
@@ -15,7 +17,9 @@
                 Message = Message, 
                 Category = Category,
                 Author = Author,
-                ImageUrl = ImageUrl
+                ImageUrl = ImageUrl,
+                Description = Description,
+                CategoryId = CategoryId
             };
         }
     }
